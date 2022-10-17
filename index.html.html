@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <title>Projeto #03 - DrivenEats</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>DrivenEats</h1>
+                <p>Sua comida em 6 minutos</p>
+            </div>
+        </header>
+        <main>
+            <h1 class="titulo-cardapio">Primeiro, seu prato</h1>
+            <section class="cardapio prato"><!---------------------------------Almoço-->
+        
+                <div onclick="selecPrato(this)" class="cx-opcao"  >
+                    <img class="img-principal" src="img/baroa.png" alt="">
+                    <div class="info-opcao">
+                        <h2>Frango com batata baroa</h2>
+                        <p> Frango grelhado com purê de batata baroa</p>
+                        <h3>R$ 25,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">  
+                   </div>
+                   
+                </div>
+                <div onclick="selecPrato(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/cogumelo.png" alt="">
+                    <div class="info-opcao">
+                        <h2>Lasanha de cogumelo</h2>
+                        <p> Com molho de tomate e cogumelos</p>
+                        <h3>R$ 29,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">  
+                   </div>
+                </div>
+                <div onclick="selecPrato(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/lasanha.png" alt="">
+                    <div class="info-opcao">
+                        <h2>Frango parmegiana</h2>
+                        <p>Filé de peito de frango empanado ao molho e queijo</p>
+                        <h3>R$ 14,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selecPrato(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/peixe.png" alt="">
+                    <div class="info-opcao">
+                        <h2>Filé de Tilápia</h2>
+                        <p> Filé de peixe grelhado com legumes salteados</p>
+                        <h3>R$ 14,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+            </section>
+            <h1 class="titulo-cardapio">Agora, sua bebida</h1>
+            <section class="cardapio bebida"><!-----------------------------------Bebida-->
+                
+                <div onclick="selectBebida(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/vermelho.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2 class="nomePrato">Suco Amor</h2>
+                        <p>Morango, melancia e chia</p>
+                        <h3>R$ 9,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selectBebida(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/amarelo.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Suco Summer</h2>
+                        <p>Maracujá com hortelã</p>
+                        <h3>R$ 9,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                        
+                   </div>
+                </div>
+                <div onclick="selectBebida(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/verde.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Suco Detox</h2>
+                        <p>Limão, couve e gengibre</p>
+                        <h3>R$ 9,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selectBebida(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/laranja.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Suco Fresh</h2>
+                        <p>Laranja, morango e hortelã</p>
+                        <h3>R$ 9,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+            </section>
+            <h1 class="titulo-cardapio">Por fim, sua sobremesa</h1>
+            <section class="cardapio Smesa"><!------------------------------Sobre mesa-->
+                
+                <div onclick="selecSmesa(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/pote rosa.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Cookie Dough</h2>
+                        <p>Sorvete de cookie de framboesa e morango</p>
+                        <h3>R$ 14,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selecSmesa(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/pote verde.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Pistache</h2>
+                        <p>Sorvete de pistache com gotas de chocolate belga</p>
+                        <h3>R$ 16,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selecSmesa(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/pote roxo.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Chocolate Brownie</h2>
+                        <p>Sorvete de brownie de chocolate com gotas de chocolate</p>
+                        <h3>R$ 14,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+                <div onclick="selecSmesa(this)" class="cx-opcao">
+                    <img class="img-principal" src="img/pote rosa.jpg" alt="">
+                    <div class="info-opcao">
+                        <h2>Strawberry Cookie </h2>
+                        <p>Sorvete de cookie de morango e chocolate branco</p>
+                        <h3>R$ 15,90</h3>
+                        <img  class="check escondido" src="img/Vector (2).svg" alt="">
+                   </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <a onclick="pedirInfo()" target="_blank" class="botao-continuar"> 
+                <p>
+                    Selecione os 3 itens<br>para fechar o pedido
+                </p>
+            </a>
+        </footer>
+        <!-- BONUS CONFIRMAR PEDIDO
+            <div class="pedidu">
+            <div>
+                <h1>Confirme seu pedido</h1>
+            </div>
+            <div>
+                <p class="prato-escolhido"></p>
+                <p class="valor-prato-escolhido"></p>
+            </div>
+            <div >
+                <p class="bebida-escolhido"></p>
+                <p class="valor-bebida-escolhido"></p>
+            </div>
+            <div>
+                <p class="sobremesa-escolhido"></p>
+                <p class="valor-sobremesa-escolhido"></p>
+            </div>
+        </div>--> 
+        
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
